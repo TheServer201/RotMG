@@ -31,37 +31,37 @@ uint32_t inline BsDword(uint32_t x) {
 	       ((x & 0xFF000000) >> 24);
 }
 
-#define BsData(i) ({      \
-	_Generic((i),         \
-	uint16_t: BsWord(i),  \
-	uint32_t: BsDword(i), \
-	default: (i));        \
+#define BsData(i) ({		\
+	_Generic((i),		\
+	uint16_t: BsWord(i),	\
+	uint32_t: BsDword(i),	\
+	default: (i));		\
 })
 
-#define ToData(o, i) ({       \
-	memcpy(&o, i, sizeof(i)); \
+#define ToData(o, i) ({			\
+	memcpy(&o, i, sizeof(i));	\
 })
 
-#define FrData(o, i) ({       \
-	memcpy(o, &i, sizeof(i)); \
+#define FrData(o, i) ({			\
+	memcpy(o, &i, sizeof(i));	\
 })
 
 #define RdData(o, i) ({	\
-	ToData(o, i);       \
-	i += sizeof(o);     \
+	ToData(o, i);	\
+	i += sizeof(o);	\
 })
 
 #define WrData(o, i) ({	\
-	FrData(o, i);       \
-	o += sizeof(i);	    \
+	FrData(o, i);	\
+	o += sizeof(i);	\
 })
 
 #define RsData(o, i) ({	\
-	RdData(o, i);       \
-	o = BsData(o);      \
+	RdData(o, i);	\
+	o = BsData(o);	\
 })
 
 #define WsData(o, i) ({	\
-    i = BsData(i);      \
-	WrData(o, i);       \
+    i = BsData(i);	\
+	WrData(o, i);	\
 })
