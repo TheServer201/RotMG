@@ -34,10 +34,6 @@ Main stuff (50%)
 |-> Inflate algorithm   (https://github.com/TheServer201/jinf_png)  
 |-> SAX like XML parser (drafted)  
 
-Quality of life (50%)  
-|-> Cmake  
-|-> See next section  
-
 ## Contact
 Florent CABRET  
 florent.cabret@gmail.com  
