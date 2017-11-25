@@ -12,7 +12,7 @@ This repository is to host and share my attempt to make a new client for the gam
 ## Done
 Connect to the game (100%)  
 &#8627; Socket Layer  (socket.c)  
-&#8627; Crypto Stuff  (https://tls.mbed.org/)  
+&#8627; Crypto Stuff  (https://www.bearssl.org/)  
 &#8627; Serialization (serial.h)  
 &#8627; Basic Packets (packet.h)  
 
@@ -29,7 +29,7 @@ Threads scheduler (25%)
 
 Main stuff (50%)  
 &#8627; Entry function      (main.c)  
-&#8627; Inflate algorithm   (https://github.com/TheServer201/jinf_png)  
+&#8627; Inflate algorithm   (https://github.com/ebiggers/libdeflate)  
 &#8627; SAX like XML parser (drafted)  
 
 ## Contact
