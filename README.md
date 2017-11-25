@@ -1,4 +1,4 @@
-# RotMG
+# RotMG [![Build Status](https://travis-ci.org/TheServer201/RotMG.svg?branch=master)](https://travis-ci.org/TheServer201/RotMG)
 
 This repository is to host and share my attempt to make a new client for the game Realm of the Mad God. It is licenced under the GPLv3.
 
